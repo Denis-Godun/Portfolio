@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: url("/images/background.png"); /* задаем фоновое изображение */
+  background-repeat: no-repeat; /* запрещаем повторять изображение */
+  background-size: cover; /* масштабируем изображение, чтобы оно полностью покрывало экран */
+  background-attachment: fixed;
+}
+
+.title {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+/*  header-------------------------------------------------------------------------------------------------- */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 95px;
+  z-index: 9999;
+  color: rgb(11, 11, 234);
+}
+
+#back-to-top.show {
+  display: block;
+}
+.fa-circle-arrow-up {
+  /* other styles */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+.header {
+  margin: auto;
+  display: flex;
+  height: 100px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header__menu h1 {
+  color: rgb(97, 176, 255);
+  font-size: 40px;
+}
+.nav-item {
+  font-size: 25px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.header__nav :hover {
+  color: rgb(97, 176, 255);
+}
+.header__social-media {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header__social-media i {
+  font-size: 35px;
+  padding: 4px;
+  color: rgb(97, 176, 255);
+}
+/*  header-------------------------------------------------------------------------------------------------- */
+
+/*about me--------------------------------------------------------------------------------------------- */
+.about-me {
+  margin-top: 70px;
+}
+.about-me h1 {
+  text-align: end;
+}
+.about-me__info {
+  height: 400px;
+  width: 900px;
+  margin-left: auto;
+
+  margin-top: 30px;
+  background-color: rgb(185, 218, 255);
+  border-radius: 25px;
+}
+.about-me__text {
+  font-size: 20px;
+  margin-bottom: 40px;
+  padding: 40px;
+  text-align: end;
+}
+
+.about-me__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  float: right;
+  shape-outside: circle(50%);
+  margin: 50px 10px;
+}
+/*about me--------------------------------------------------------------------------------------------- */
+
+/*skills--------------------------------------------------------------------------------------------- */
+.skills {
+  margin-top: 70px;
+}
+.skills h1 {
+  text-align: start;
+}
+.skills__info {
+  height: 400px;
+  width: 900px;
+  margin-right: auto;
+
+  margin-top: 30px;
+  background-color: rgb(209, 200, 255);
+  border-radius: 25px;
+}
+.skills__text {
+  font-size: 20px;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+.skills__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+  margin: 50px 10px;
+}
+/*skills--------------------------------------------------------------------------------------------- */
+
+/*my Project--------------------------------------------------------------------------------------------- */
+.my-projects h1 {
+  text-align: center;
+}
+#my-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  width: 380px;
+  min-height: 350px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: 1s ease;
+  border-radius: 5%;
+  /* horizontal length, vertical length, Blur radius, spread, color */
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  height: 250px;
+}
+
+.card:hover .image {
+  filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.details {
+  padding: 15px;
+}
+
+.middle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  opacity: 0;
+  color: black;
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  filter: brightness(100%);
+}
+
+.middle i {
+  font-size: 70px;
+  color: red;
+}
+
+.middle h1 {
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+#to_do_list_card {
+  background-color: rgba(30, 143, 255, 0.7);
+  color: white;
+}
+
+#tip_calculator_card {
+  background-color: rgba(220, 255, 170, 0.7);
+  color: white;
+}
+
+#flashcards_card {
+  background-color: rgba(230, 187, 255, 0.7);
+  color: white;
+}
+
+#quote_card {
+  background-color: rgba(127, 255, 212, 0.7);
+  color: white;
+}
+
+#stickers_card {
+  background-color: rgba(189, 237, 252, 0.7);
+  color: white;
+}
+
+#img_card {
+  background-color: rgba(255, 174, 154, 0.7);
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+
+  .card:hover {
+    transform: scale(1);
+  }
+}
+
+/*my Project--------------------------------------------------------------------------------------------- */
+
+/*Footer--------------------------------------------------------------------------------------------- */
+
+.footer {
+  background-color: rgb(97, 176, 255);
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer h1 {
+  color: white;
+  text-align: center;
+}
+.footer-nav a {
+  color: white;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav :hover {
+  color: aquamarine;
+}
+.footer-social {
+  color: white;
+  font-size: 30px;
+  padding: 4px;
+}
+.footer__social-media {
+  margin-left: 90px;
+}
+
+/*Footer--------------------------------------------------------------------------------------------- */
