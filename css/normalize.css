@@ -76,10 +76,89 @@
 
 /* Для разрешения экрана шириной от 481px до 768px */
 @media (min-width: 481px) and (max-width: 768px) {
+   /*  header-------------------------------------------------------------------------------------------------- */
+   .container {
+    width: 485px;
+  }
+  .header {
+    height: 140px;
+  }
+ 
+  .nav-item {
+    display: flex;
+    text-decoration: none;
+    color: rgb(97, 176, 255);
+    margin-left: 25px;
+  }
+  .header__social-media {
+    margin-right: 25px;
+  }
+  #back-to-top {
+    font-size: 25px;
+  }
+  /*  header-------------------------------------------------------------------------------------------------- */
+
+  /*about me--------------------------------------------------------------------------------------------- */
+  .about-me {
+    margin-top: 35px;
+  }
+  .about-me h1 {
+    text-align: center;
+  }
+  .about-me__info {
+    height: auto;
+    width: 340px;
+  }
+  .about-me__text {
+    font-size: 16px;
+    text-align: center;
+  }
+  .about-me__avatar {
+    width: 170px;
+    height: 170px;
+    margin: 10px 10px;
+  }
+  /*about me--------------------------------------------------------------------------------------------- */
+
+  /*skills--------------------------------------------------------------------------------------------- */
+  .skills {
+    margin-top: 35px;
+  }
+  .skills h1 {
+    text-align: center;
+  }
+  .skills__info {
+    height: auto;
+    width: 340px;
+  }
+  .skills__text {
+    font-size: 16px;
+    text-align: center;
+  }
+  .skills__avatar {
+    width: 170px;
+    height: 170px;
+    margin: 10px 10px;
+  }
+  /*skills--------------------------------------------------------------------------------------------- */
+  .footer-nav {
+    display: none;
+  }
 }
 
 /* Для разрешения экрана шириной от 769px до 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .container{
+    width: 769px;
+  }
+  .about-me__info {
+    width: 750px;
+    height: auto;
+  }
+  .skills__info {
+    width: 750px;
+    height: auto;
+  }
 }
 
 /* Для разрешения экрана шириной от 1025px */
