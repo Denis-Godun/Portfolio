@@ -156,7 +156,7 @@ body {
   text-align: start;
 }
 .skills__info {
-  height: 400px;
+  height: 300px;
   width: 900px;
   margin-right: auto;
 
@@ -166,8 +166,9 @@ body {
 }
 .skills__text {
   font-size: 20px;
-  margin-bottom: 40px;
-  padding: 40px;
+
+  padding-top: 50px;
+  padding-right: 15px;
 }
 
 .skills__avatar {
@@ -176,7 +177,7 @@ body {
   border-radius: 50%;
   float: left;
   shape-outside: circle(50%);
-  margin: 50px 10px;
+  margin: 30px 10px;
 }
 /*skills--------------------------------------------------------------------------------------------- */
 
@@ -195,8 +196,8 @@ body {
 .card {
   position: relative;
   width: 380px;
-  min-height: 350px;
-  margin: 20px 0;
+  height: 430px;
+  margin: 10px 0;
   cursor: pointer;
   transition: 1s ease;
   border-radius: 5%;
@@ -225,7 +226,7 @@ body {
 }
 
 .details {
-  padding: 15px;
+  padding: 5px;
 }
 
 .middle {
@@ -255,32 +256,32 @@ body {
 }
 
 #to_do_list_card {
-  background-color: rgba(30, 143, 255, 0.7);
+  background-color: rgb(185, 218, 255);
   color: white;
 }
 
 #tip_calculator_card {
-  background-color: rgba(220, 255, 170, 0.7);
+  background-color: rgb(185, 218, 255);
   color: white;
 }
 
 #flashcards_card {
-  background-color: rgba(230, 187, 255, 0.7);
+  background-color: rgb(185, 218, 255);
   color: white;
 }
 
 #quote_card {
-  background-color: rgba(127, 255, 212, 0.7);
+  background-color: rgb(209, 200, 255);
   color: white;
 }
 
 #stickers_card {
-  background-color: rgba(189, 237, 252, 0.7);
+  background-color: rgb(209, 200, 255);
   color: white;
 }
 
 #img_card {
-  background-color: rgba(255, 174, 154, 0.7);
+  background-color: rgb(209, 200, 255);
   color: white;
 }
 

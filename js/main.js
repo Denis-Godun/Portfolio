@@ -7,7 +7,7 @@ document.getElementsByClassName("article")[1].addEventListener("click", () => {
 });
 
 document.getElementsByClassName("article")[2].addEventListener("click", () => {
-  window.open("https://gengdeng.github.io/calculator/");
+  window.open("https://gengdeng.github.io/tip-calculator/");
 });
 
 document.getElementsByClassName("article")[3].addEventListener("click", () => {
