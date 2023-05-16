@@ -1,25 +1,25 @@
 document.getElementsByClassName("article")[0].addEventListener("click", () => {
-  window.open("https://gengdeng.github.io/to-do/");
+  window.open("https://denis-godun.github.io/to-do/");
 });
 
 document.getElementsByClassName("article")[1].addEventListener("click", () => {
-  window.open("https://gengdeng.github.io/cards/");
+  window.open("https://denis-godun.github.io/cards/");
 });
 
 document.getElementsByClassName("article")[2].addEventListener("click", () => {
-  window.open("https://gengdeng.github.io/tip-calculator/");
+  window.open("https://denis-godun.github.io/tip-calculator/");
 });
 
 document.getElementsByClassName("article")[3].addEventListener("click", () => {
-  window.open("https://gengdeng.github.io/quote/");
+  window.open("https://denis-godun.github.io/math/index.html");
 });
 
 document.getElementsByClassName("article")[4].addEventListener("click", () => {
-  window.open("https://gengdeng.github.io/stickers/");
+  window.open("https://denis-godun.github.io/stickers/");
 });
 
 document.getElementsByClassName("article")[5].addEventListener("click", () => {
-  window.open("https://gengdeng.github.io/fetch-img/");
+  window.open("https://denis-godun.github.io/fetch-img/");
 });
 
 const backToTopButton = document.querySelector("#back-to-top");
